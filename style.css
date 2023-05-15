@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-size:16px;
+}
+
+
+/* Navbar */
+nav {
+    position: relative;
+    width: 100%;
+}
+
+ul {
+    background-color: rgba(136, 136, 136, 0.5);
+    text-align: center;
+    margin: 0;
+    height: 68px;
+    padding: 0 48px 0 40px;
+    line-height: 68px;
+    position: absolute;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+}
+.logo {
+    float: left;
+    margin-top: 12px;
+}
+.logo a {
+    width: 86px;
+    display: block;
+}
+
+.logo a img {
+    width: 100%;
+    display: block;
+}
+
+.nav-btn {
+    float: right;
+}
+
+.nav-btn {
+    border-radius: 22px;
+    background-color: #2086fb;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 14px;
+}
+
+.nav-btn a {
+    padding: 10px 29.5px 12px 30.5px;
+    font-size: 15px;
+}
+
+.nav-links a {
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* Banner */
+#banner {
+    background-image: url(assets/hero-4.jpg);
+    height: 568px;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+}
+
+#banner .banner-content {
+    text-align: center;
+    padding: 215px 252px 224px 252px;
+}
+
+#banner div h1 {
+    /* color: #ffffff; */
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 24px;
+    max-width: 100%;
+}
+
+#banner form {
+    width: 936px;
+    max-width: 100%;
+    height: 64px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 6px 5px 5px 5px;
+    border-radius: 4px;
+}
+
+
+.icon-rtl {
+    width: 926px;
+    height: 53px;
+    padding-right: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat;
+    background-position:right 2% center;
+    background-size: 32px;
+    background-color: #fff;
+    border: none;
+    max-width: 100%;
+}
+
+.icon-rtl::placeholder {
+    padding:15px 0 15px 20px;
+    font-size: 16px;
+    color:#9b9b9b;
+}
+
+/* Services */
+
+#services {
+    width: 100%;
+    height: 738px;
+}
+
+.container {
+    margin: 40px 14px;
+    font-family: 'Open Sans', sans-serif;
+    height: auto;
+    float: left;
+}
+
+.s1 {
+    width: calc(98%/4);
+    height: 328px;
+    text-align: center;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    float: left;
+}
+
+.s1:nth-child(4),.s1:last-child  {
+    border-right: none;
+}
+
+.br-btm{
+    border-bottom: none !important;
+}
+
+.content {
+    padding: 52px 32px 60px 32px
+}
+
+.content img {
+    margin-bottom: 24px;
+}
+
+.content h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #4a4a4a;
+}
+
+.content p {
+    /* font-size:16px; */
+    color: #858585;
+}
+
+#cta{
+    background-color:#323232;
+    text-align: center;
+}
+
+#cta .cta-content{
+    padding:64px 0 126px 0
+}
+#cta .cta-content h2{
+    font-size:30px;
+    /* color: #fff; */
+}
+
+#cta .cta-content p{
+    /* font-size:16px; */
+    /* color: #fff; */
+    margin:4px 0 48px 0;
+}
+
+#cta .cta-content a{
+    padding:10px 73px 12px 73px;
+    background-color:#2086fb;
+    border-radius: 22px;
+}
+
+
+/* Footer */
+footer{
+    height: 64px;
+    background-color: #252525;
+    /* line-height: 64px; */
+    font-size:14px;
+    /* color: #fff; */
+    padding:24px 0px 24px 40px;
+    position: relative;
+}
+
+footer button{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 45px;
+    bottom: 45px;
+    background-color: #4a4a4a;
+    border: 0;
+}
+
+button img.top-to-up{
+   width:100%;
+   color: #979797;
+}
