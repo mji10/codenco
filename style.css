@@ -45,25 +45,25 @@ header {
 li {
     display: inline-block;
 }
-.nav-logo {
+.nav__logo {
     float: left;
     margin-top: 12px;
 }
-.nav-logo a {
+.nav__logo a {
    
     display: block;
 }
 
-.nav-logo a img {
+.nav__logo a img {
     width: 86px;
     display: block;
 }
 
-.nav-btn {
+.nav__btn {
     float: right;
 }
 
-.nav-btn {
+.nav__btn {
     border-radius: 22px;
     background-color: #2086fb;
     height: 40px;
@@ -72,17 +72,17 @@ li {
     text-transform: uppercase;
 }
 
-.nav-btn .nav-links {
+.nav__btn .nav__links{
     padding: 10px 29px 12px 30px;
     font-size: 14px;
 }
 
-.nav-items .nav-links{
+.nav-items .nav__links{
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
 }
-.nav-items .nav-links:hover{
+.nav-items .nav__links:hover{
     color:#333
 }
 
@@ -103,10 +103,7 @@ li {
     text-align: center;
 }
 
-.banner-items{
-    min-height: 568px;
-}
-#banner .banner-content {
+#banner .banner__content {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -115,14 +112,14 @@ li {
     max-width: 100%;
 }
 
-#banner .banner-title {
+#banner .banner__content__title {
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 24px;
     max-width: 100%;
 }
 
-.banner-form {
+.banner__form {
     width: 936px;
     max-width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
@@ -131,7 +128,7 @@ li {
     margin: auto;
 }
 
-.banner-form input[type=text] {
+.banner__form input[type=text] {
     padding: 15px 25px 16px;
     font-size: 17px;
     border: none;
@@ -141,11 +138,11 @@ li {
     max-width: 95%;
   }
 
-  .banner-form input:focus{
+  .banner__form input:focus{
     outline: none;
   }
   
-  .banner-form button {
+  .banner__form button {
     float: left;
     width: 5%;
     padding: 15px 0 16px;
@@ -158,7 +155,7 @@ li {
     max-width: 100%;
   }
   
-  .banner-form::after {
+  .banner__form::after {
     content: "";
     clear: both;
     display: table;
