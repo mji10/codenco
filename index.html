@@ -5,94 +5,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cose n Co</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li class="logo">
+    <header>
+        <ul class="nav">
+            <li class="nav-logo">
                 <a href="#"><img src="assets\tech-startup-logo-design-toronto-featured@3x.png" alt=""></a>
             </li>
-            <li class="nav-links"><a href="#">HOME</a></li>
-            <li class="nav-links"><a href="#">ABOUT US</a></li>
-            <li class="nav-links"><a href="#">SERVICES</a></li>
-            <li class="nav-links"><a href="#">PRODUCTS</a></li>
-            <li class="nav-links"><a href="#">PRICING</a></li>
-            <li class="nav-links"><a href="#">API</a></li>
-            <li class="nav-links"><a href="#" style="color:#333">SUPPORT</a></li>
-            <li class="nav-links"><a href="#">CONTACTS</a></li>
-            <li class="nav-btn"><a href="#">TRY NOW</a></li>
+            <li class="nav-items"><a href="#" class="nav-links">Home</a></li>
+            <li class="nav-items"><a href="#" class="nav-links nav__links--mrgn-left">About us</a></li>
+            <li class="nav-items"><a href="#" class="nav-links nav__links--mrgn-left">Services</a></li>
+            <li class="nav-items"><a href="#" class="nav-links nav__links--mrgn-left">Products</a></li>
+            <li class="nav-items"><a href="#" class="nav-links nav__links--mrgn-left">Pricing</a></li>
+            <li class="nav-items"><a href="#" class="nav-links nav__links--mrgn-left">Api</a></li>
+            <li class="nav-items"><a href="#" class="nav-links nav__links--mrgn-left" style="color:#333">Support</a>
+            </li>
+            <li class="nav-items"><a href="#" class="nav-links nav__links--mrgn-left">Contacts</a></li>
+            <li class="nav-btn"><a href="#" class="nav-links">Try now</a></li>
         </ul>
-    </nav>
+    </header>
     <main>
         <section id="banner">
             <div class="banner-content">
-                <h1>Get help about our products, basic knowledge and more</h1>
-                <form action="action.php">
-                    <input type="text" class="icon-rtl" value
-                        placeholder="Search for features, basic knowledge or options…">
+                <div class="banner-title">
+                    Get help about our products, basic knowledge and more
+                </div>
+                <form class="banner-form" action="/action_page.php">
+                    <input type="text" placeholder="Search for features, basic knowledge or options…" name="search"
+                        class="icon-rtl">
+                    <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
         </section>
 
         <section id="services">
             <div class="container">
-                <div class="s1">
-                    <div class="content">
-                        <img src="assets\general.svg" alt="">
-                        <h2>General</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+                <div class="services__card">
+                    <div class="service__card__content">
+                        <img src="assets\general.svg" alt="general.svg" class="service__card__content-img">
+                        <h2 class="service__card__content-title">General</h2>
+                        <p class="service__card__content-discription">TheLorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit.
+                            Aenean
+                            commodo</p>
                     </div>
                 </div>
-                <div class="s1">
-                    <div class="content">
-                        <img src="assets\installation.svg" alt="">
-                        <h2>Implementation</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+                <div class="services__card">
+                    <div class="service__card__content">
+                        <img src="assets\installation.svg" alt="installation" class="service__card__content-img">
+                        <h2 class="service__card__content-title">Implementation</h2>
+                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo</p>
                     </div>
                 </div>
-                <div class="s1">
-                    <div class="content">
-                        <img src="assets\tutorial.svg" alt="">
-                        <h2>Tutorial</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+                <div class="services__card">
+                    <div class="service__card__content">
+                        <img src="assets\tutorial.svg" alt="tutorial.svg" class="service__card__content-img">
+                        <h2 class="service__card__content-title">Tutorial</h2>
+                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo</p>
                     </div>
                 </div>
-                <div class="s1">
-                    <div class="content">
-                        <img src="assets\basic-knowledge.svg" alt="">
-                        <h2>Basic Knowledge</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+                <div class="services__card">
+                    <div class="service__card__content">
+                        <img src="assets\basic-knowledge.svg" alt="basic-knowledge" class="service__card__content-img">
+                        <h2 class="service__card__content-title">Basic Knowledge</h2>
+                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo</p>
                     </div>
                 </div>
-                <div class="s1 br-btm">
-                    <div class="content">
-                        <img src="assets\how-to.svg" alt="">
-                        <h2>How-to</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+                <div class="services__card br-btm">
+                    <div class="service__card__content">
+                        <img src="assets\how-to.svg" alt="how-to" class="service__card__content-img">
+                        <h2 class="service__card__content-title">How-to</h2>
+                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo</p>
                     </div>
                 </div>
-                <div class="s1 br-btm">
-                    <div class="content">
-                        <img src="assets\api.svg" alt="">
-                        <h2>API Reference</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+                <div class="services__card br-btm">
+                    <div class="service__card__content">
+                        <img src="assets\api.svg" alt="" class="service__card__content-img">
+                        <h2 class="service__card__content-title">API Reference</h2>
+                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo</p>
                     </div>
                 </div>
-                <div class="s1 br-btm">
-                    <div class="content">
-                        <img src="assets\trubleshhoting.svg" alt="">
-                        <h2>Troubleshooting</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+                <div class="services__card br-btm">
+                    <div class="service__card__content">
+                        <img src="assets\trubleshhoting.svg" alt="" class="service__card__content-img">
+                        <h2 class="service__card__content-title">Troubleshooting</h2>
+                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo</p>
                     </div>
                 </div>
-                <div class="s1 br-btm">
-                    <div class="content">
-                        <img src="assets\costume-service.svg" alt="">
-                        <h2>Costumer service</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
+                <div class="services__card br-btm">
+                    <div class="service__card__content">
+                        <img src="assets\costume-service.svg" alt="" class="service__card__content-img">
+                        <h2 class="service__card__content-title">Costumer service</h2>
+                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean commodo</p>
                     </div>
                 </div>
             </div>
@@ -101,16 +116,17 @@
 
         <section id="cta">
             <div class="cta-content">
-                <h2>Didn’t find what you are looking for?</h2>
-                <p>Don’t worry! Let’s chat with US</p>
-                <a href="#">REQUEST A CHAT</a>
+                <h2 class="cta_content__title">Didn’t find what you are looking for?</h2>
+                <p class="cta__content__discription">Don’t worry! Let’s chat with US</p>
+                <a href="#" class="cta__content__link">REQUEST A CHAT</a>
             </div>
         </section>
 
     </main>
     <footer>
         <p>Copyright 2018 Code&CO ©. All rights Reserved</p>
-        <button><img src="assets\523835-removebg-preview.png" alt="" class="top-to-up"></button>
+        <button><i class="back-to-top up"></i>
+        </button>
     </footer>
 </body>
 
