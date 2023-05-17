@@ -12,112 +12,57 @@
 
 <body>
     <header>
-        <ul class="nav">
-            <li class="nav__logo">
-                <a href="/index.html"><img src="assets\tech-startup-logo-design-toronto-featured@3x.png"
-                        alt="codenco logo" width="86" height="100%"></a>
-            </li>
-            <li class="nav__items"><a href="/index.html" class="nav__links f-14">Home</a></li>
-            <li class="nav__items"><a href="/index.html" class="nav__links nav__links--mrgn-left f-14">About us</a>
-            </li>
-            <li class="nav__items"><a href="/index.html" class="nav__links nav__links--mrgn-left f-14">Services</a>
-            </li>
-            <li class="nav__items"><a href="/index.html" class="nav__links nav__links--mrgn-left f-14">Products</a>
-            </li>
-            <li class="nav__items"><a href="/index.html" class="nav__links nav__links--mrgn-left f-14">Pricing</a>
-            </li>
-            <li class="nav__items"><a href="/index.html" class="nav__links nav__links--mrgn-left f-14">Api</a></li>
-            <li class="nav__items"><a href="/index.html" class="nav__links nav__links--mrgn-left f-14">Support</a>
-            </li>
-            <li class="nav__items"><a href="/index.html" class="nav__links nav__links--mrgn-left f-14">Contacts</a>
-            </li>
-            <li class="nav__btn"><a href="/index.html" class="btn nav__links f-14">Try now</a></li>
-        </ul>
+        <div class="container">
+            <div class="nav__logo">
+                <a href="javascript:void(0)"><img src="assets\tech-startup-logo-design-toronto-featured@3x.png"
+                        alt="codenco logo" width="86" height="auto"></a>
+            </div>
+            <ul class="nav">
+
+                <!-- <li class="nav__logo">
+                    
+                </li> -->
+                <li class="nav__items"><a href="javascript:void(0)" class="nav__links f-14">Home</a></li>
+                <li class="nav__items"><a href="javascript:void(0)" class="nav__links nav__links--mrgn-left f-14">About
+                        us</a>
+                </li>
+                <li class="nav__items"><a href="javascript:void(0)"
+                        class="nav__links nav__links--mrgn-left f-14">Services</a>
+                </li>
+                <li class="nav__items"><a href="javascript:void(0)"
+                        class="nav__links nav__links--mrgn-left f-14">Products</a>
+                </li>
+                <li class="nav__items"><a href="javascript:void(0)"
+                        class="nav__links nav__links--mrgn-left f-14">Pricing</a>
+                </li>
+                <li class="nav__items"><a href="javascript:void(0)"
+                        class="nav__links nav__links--mrgn-left f-14">Api</a></li>
+                <li class="nav__items"><a href="javascript:void(0)"
+                        class="nav__links nav__links--mrgn-left f-14">Support</a>
+                </li>
+                <li class="nav__items"><a href="javascript:void(0)"
+                        class="nav__links nav__links--mrgn-left f-14">Contacts</a>
+                </li>
+                <li class="nav__btn"><a href="javascript:void(0)" class="btn nav__links f-14">Try now</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section id="banner">
-            <div class="banner__content">
-                <div class="banner__content__title">
-                    Get help about our products, basic knowledge and more
+            <div class="container">
+                <div class="banner__content">
+                    <div class="banner__content__title">
+                        <h1 class="banner__content__title">Get help about our products, basic knowledge and more</h1>
+                    </div>
+                    <form class="banner__form" action="/action_page.php">
+                        <input type="text" placeholder="Search for features, basic knowledge or options…" name="search"
+                            autocomplete="off" class="icon-rtl">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
                 </div>
-                <form class="banner__form" action="/action_page.php">
-                    <input type="text" placeholder="Search for features, basic knowledge or options…" name="search"
-                        autocomplete="off" class="icon-rtl">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
             </div>
         </section>
 
-        <!-- <section id="services">
-            <div class="container">
-                <div class="services__card">
-                    <div class="service__card__content">
-                        <img src="assets\general.svg" alt="general.svg" class="service__card__content-img">
-                        <h2 class="service__card__content-title">General</h2>
-                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit.
-                            Aenean
-                            commodo</p>
-                    </div>
-                </div>
-                <div class="services__card">
-                    <div class="service__card__content">
-                        <img src="assets\installation.svg" alt="installation" class="service__card__content-img">
-                        <h2 class="service__card__content-title">Implementation</h2>
-                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit. Aenean commodo</p>
-                    </div>
-                </div>
-                <div class="services__card">
-                    <div class="service__card__content">
-                        <img src="assets\tutorial.svg" alt="tutorial.svg" class="service__card__content-img">
-                        <h2 class="service__card__content-title">Tutorial</h2>
-                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit. Aenean commodo</p>
-                    </div>
-                </div>
-                <div class="services__card">
-                    <div class="service__card__content">
-                        <img src="assets\basic-knowledge.svg" alt="basic-knowledge" class="service__card__content-img">
-                        <h2 class="service__card__content-title">Basic Knowledge</h2>
-                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit. Aenean commodo</p>
-                    </div>
-                </div>
-                <div class="services__card br-btm">
-                    <div class="service__card__content">
-                        <img src="assets\how-to.svg" alt="how-to" class="service__card__content-img">
-                        <h2 class="service__card__content-title">How-to</h2>
-                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit. Aenean commodo</p>
-                    </div>
-                </div>
-                <div class="services__card br-btm">
-                    <div class="service__card__content">
-                        <img src="assets\api.svg" alt="" class="service__card__content-img">
-                        <h2 class="service__card__content-title">API Reference</h2>
-                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit. Aenean commodo</p>
-                    </div>
-                </div>
-                <div class="services__card br-btm">
-                    <div class="service__card__content">
-                        <img src="assets\trubleshhoting.svg" alt="" class="service__card__content-img">
-                        <h2 class="service__card__content-title">Troubleshooting</h2>
-                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit. Aenean commodo</p>
-                    </div>
-                </div>
-                <div class="services__card br-btm">
-                    <div class="service__card__content">
-                        <img src="assets\costume-service.svg" alt="" class="service__card__content-img">
-                        <h2 class="service__card__content-title">Costumer service</h2>
-                        <p class="service__card__content-discription">Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit. Aenean commodo</p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <section id="services">
             <div class="container">
@@ -196,16 +141,18 @@
                 <div class="cta-content">
                     <h2 class="cta_content__title">Didn’t find what you are looking for?</h2>
                     <p class="cta__content__discription">Don’t worry! Let’s chat with US</p>
-                    <a href="/index.html" class="cta__content__link btn">REQUEST A CHAT</a>
+                    <a href="javascript:void(0)" class="cta__content__link btn">REQUEST A CHAT</a>
                 </div>
             </div>
         </section>
 
     </main>
     <footer>
-        <p>Copyright 2018 Code&CO ©. All rights Reserved</p>
-        <button onclick="topFunction()"><i class="back-to-top up"></i>
-        </button>
+        <div class="container">
+            <p>Copyright 2018 Code&CO ©. All rights Reserved</p>
+            <button onclick="topFunction()"><i class="back-to-top up"></i>
+            </button>
+        </div>
     </footer>
 
 
