@@ -32,6 +32,10 @@ p{
     text-transform: uppercase;
 }
 
+.f-14{
+font-size:14px
+}
+
 
 /* Navbar */
 header {
@@ -45,7 +49,6 @@ header {
     background-color: rgba(136, 136, 136, 0.5);
     text-align: center;
     margin: 0;
-  
     padding: 0 48px 0 40px;
     line-height: 68px;
     position: absolute;
@@ -79,22 +82,25 @@ header {
 
 .nav__btn .nav__links{
     padding: 10px 29px 12px 30px;
-    font-size: 14px;
 }
 
 .nav__items .nav__links{
-    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     margin-left: 30px;
+    transition: 0.5s;
 }
 .nav__items .nav__links:hover{
     color:#333
 }
 
 
-.nav__items:first-child{
+/* .nav__items:nth-child(n+2){
     margin-left: 0;
+} */
+
+.nav .nav__items:nth-child(2) a{
+    margin-left:0
 }
 
 
@@ -183,10 +189,12 @@ header {
 }
 
 .container {
-    margin: 40px auto;
+    margin: auto;
     font-family: 'Open Sans', sans-serif;
     height: auto;
-    max-width: 1440px;
+    max-width: 1360px;
+    padding: 40px;
+    height: 100%;
 }
 
 .services__card {
@@ -236,7 +244,7 @@ header {
 .services__ul .services__content{
     display: inline-block;
     height: 328px;
-    width: 328px;
+    width: calc(100%/4);
     padding: 52px 32px 60px 32px;
     border-right:1px solid #dcdcdc;
     border-bottom:1px solid #dcdcdc;
@@ -244,8 +252,12 @@ header {
     border-collapse: collapse;
 }
 
-.services__content:nth-child(4) ,.services__content:nth-child(8){
+/* .services__content:nth-child(4) ,.services__content:nth-last-child(-n+1){
     border-right:none;
+} */
+
+.services__content:nth-child(4n){
+    border-right: none;
 }
 
 .services__content:nth-last-child(-n+4){
@@ -264,6 +276,7 @@ header {
 
 .services__ul .service__card__content-discription {
     color: #858585;
+    line-height: 1.63;
 }
 
 #cta{
@@ -278,7 +291,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    padding:64px 0 69px 0
+    padding:24px 0 29px 0
 }
 #cta .cta-content .cta_content__title{
     font-size:30px;
