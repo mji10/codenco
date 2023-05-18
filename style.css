@@ -262,7 +262,7 @@ header {
 
 /* Footer */
 footer{
-    height: 64px;
+    /* height: 64px; */
     background-color: #252525;
     font-size:14px;
     padding:24px 40px 24px 40px;
