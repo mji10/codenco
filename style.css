@@ -51,7 +51,6 @@ header {
     text-align: center;
     margin: 0;
     line-height: 44px;
-    width: 100%;
 }
 .nav__items,.nav__btn,.nav__logo {
     display: inline-block;
@@ -135,7 +134,6 @@ header {
 .banner .banner__content__title {
     font-size: 30px;
     margin-bottom: 24px;
-    max-width: 100%;
 }
 
 .banner__form {
@@ -196,7 +194,6 @@ header {
 /* Services using list */
 
 .services__ul{
-    width: 100%;
     text-align: center;
     font-size: 0px;
 }
@@ -248,15 +245,16 @@ header {
     transform: translate(-50%, -50%); */
     padding:64px 0 69px 0
 }
-.cta .cta-content .cta_content__title{
+
+.cta-content .cta_content__title{
     font-size:30px;
 }
 
-.cta .cta-content .cta__content__discription{
+.cta-content .cta__content__discription{
     margin:4px 0 48px 0;
 }
 
-.cta .cta-content .cta__content__link{
+.cta-content .cta__content__link{
     padding:10px 73px 12px 73px;
     display: inline-block;
 }
@@ -271,7 +269,7 @@ footer{
     position: relative;
 }
 
-footer button{
+footer .footer__btn{
     width: 28px;
     height: 28px;
     position: absolute;
@@ -282,7 +280,7 @@ footer button{
     border-radius: 4px;
 }
 
-button .back-to-top{
+.footer__btn .back-to-top{
     border:solid;
     border-width:0 1px 1px 0;
     display: inline-block;
@@ -290,7 +288,7 @@ button .back-to-top{
     padding: 3px
 }
 
-button:hover{
+.footer__btn:hover{
     cursor: pointer;
 }
 
