@@ -16,13 +16,12 @@ body{
 }
 
 
-a {
+.links {
     text-decoration: none;
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
 }
 
-p{
+.f-16 {
     font-size:16px;
 }
 
@@ -52,7 +51,6 @@ header {
     text-align: center;
     margin: 0;
     line-height: 44px;
-    /* position: absolute; */
     width: 100%;
 }
 .nav__items,.nav__btn,.nav__logo {
@@ -62,12 +60,12 @@ header {
     float: left;
     /* margin-top: 12px; */
 }
-.nav__logo a {
+.nav__logo .nav__links {
    
     display: block;
 }
 
-.nav__logo img {
+.nav__logo .nav__img {
     display: block;
 }
 
@@ -96,10 +94,6 @@ header {
 }
 
 
-/* .nav__items:nth-child(n+2){
-    margin-left: 0;
-} */
-
 .nav__items:nth-child(1) .nav__links{
     margin-left:0
 }
@@ -107,7 +101,7 @@ header {
 
 
 /* Banner */
-#banner {
+.banner {
     background-image: url(assets/hero-4.jpg);
     height:568px;
     background-size: cover;
@@ -118,7 +112,7 @@ header {
     text-align: center;
 }
 
-#banner::after{
+.banner::after{
     content: "";
     position:absolute;
     top: 0;
@@ -128,7 +122,7 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-#banner .banner__content {
+.banner .banner__content {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -138,9 +132,8 @@ header {
     z-index: 1;
 }
 
-#banner .banner__content__title {
+.banner .banner__content__title {
     font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
     margin-bottom: 24px;
     max-width: 100%;
 }
@@ -187,9 +180,12 @@ header {
 
 /* Services */
 
+.services{
+    padding: 40px 0;
+}
+
 .container {
     margin: auto;
-    font-family: 'Open Sans', sans-serif;
     height: auto;
     max-width: 1360px;
     padding:0px 20px;
@@ -216,10 +212,6 @@ header {
     border-collapse: collapse;
 }
 
-/* .services__content:nth-child(4) ,.services__content:nth-last-child(-n+1){
-    border-right:none;
-} */
-
 .services__content:nth-child(4n){
     border-right: none;
 }
@@ -243,29 +235,28 @@ header {
     line-height: 1.63;
 }
 
-#cta{
+.cta{
     background-color:#323232;
     text-align: center;
-    /* min-height: 356px; */
     position: relative;
 }
 
-#cta .cta-content{
+.cta .cta-content{
     /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
     padding:64px 0 69px 0
 }
-#cta .cta-content .cta_content__title{
+.cta .cta-content .cta_content__title{
     font-size:30px;
 }
 
-#cta .cta-content .cta__content__discription{
+.cta .cta-content .cta__content__discription{
     margin:4px 0 48px 0;
 }
 
-#cta .cta-content .cta__content__link{
+.cta .cta-content .cta__content__link{
     padding:10px 73px 12px 73px;
     display: inline-block;
 }
